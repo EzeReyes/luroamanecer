@@ -1,0 +1,42 @@
+$colorMenu: #dee7f185;
+
+.menu {
+    grid-area: navb;
+.navbar-expand-lg {
+    background-color: $colorMenu;
+    .navbar-collapse {
+        justify-content: end;
+    }
+}
+.navbar-brand {
+    img{ 
+        border-radius: 50%;
+        width: 5rem;
+        height: auto;
+    }
+}
+.titulo {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 3rem;
+    font-weight: bolder;
+    width: 30rem;
+}
+}
+
+
+
+footer {
+    grid-area: foot;
+    display: flex;
+    width: 100vw;
+    background-color: $colorMenu;
+    align-items: center;
+    text-align: center;
+    height: 28rem;
+    p {
+        display: flex;
+        color:#38393aa9;
+    }
+}

@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.grid-home {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "navb navb navb" "carr carr carr" "sect sect sect" "sect2 sect2 sect2" "foot foot foot";
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contenedor {
+  grid-area: carr;
+  height: 40rem;
+  width: 100vw;
+}
+.contenedor img {
+  height: 40rem;
+  width: 100vw;
+}
+
+.se1 {
+  grid-area: sect;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+.se1 .titular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+.se1 .cuadro1 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  height: 50rem;
+  padding: 1rem;
+  width: 100vw;
+}
+.se1 .cuadro1 .cuadro1__p {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  font-size: 3rem;
+}
+.se1 .cuadro1 .cuadro1__img {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  font-size: 2rem;
+}
+.se1 .cuadro1 .cuadro1__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+.se1 .cuadro1--rev {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50rem;
+  padding: 1rem;
+}
+.se1 .cuadro1--rev .cuadro1__p {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  width: 50rem;
+  font-size: 3rem;
+}
+.se1 .cuadro1--rev .cuadro1__img {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  font-size: 2rem;
+}
+.se1 .cuadro1--rev .cuadro1__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 2rem;
+}
+.se1 .nuestros {
+  background: linear-gradient(to left, black, transparent), url("../img/home/pexels-lucas-guizo-5337821.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50rem;
+  color: rgba(240, 248, 255, 0.815);
+}
+.se1 .nuestros p {
+  text-align: center;
+  margin: 3rem;
+}
+
+.se2 {
+  grid-area: sect2;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 30rem;
+  background-color: aquamarine;
+}
+.se2 .titulo__se2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 10rem;
+  padding: 2rem;
+  width: 100vw;
+}
+.se2 .prod {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  height: 50rem;
+  width: 100vw;
+}
+.se2 .prod .prod__lacteos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(128, 128, 128, 0.664), rgba(255, 255, 255, 0.137)), url("../img/home/productos/lacteos.jpg");
+  background-size: cover;
+  color: aliceblue;
+}
+.se2 .prod .prod__lacteos h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.se2 .prod .prod__bebidas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(128, 128, 128, 0.664), rgba(255, 255, 255, 0.137)), url("../img/home/productos/bebidas.jpg");
+  background-size: cover;
+  color: aliceblue;
+}
+.se2 .prod .prod__bebidas h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.se2 .prod .prod__golosinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(128, 128, 128, 0.664), rgba(255, 255, 255, 0.137)), url("../img/home/productos/golosinas.jpg");
+  background-size: cover;
+  color: aliceblue;
+}
+.se2 .prod .prod__golosinas h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.se2 .prod .prod__quesos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(128, 128, 128, 0.664), rgba(255, 255, 255, 0.137)), url(../img/home/productos/queso.jpg);
+  background-size: cover;
+  color: aliceblue;
+}
+.se2 .prod .prod__quesos h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.se2 .prod .prod__Snacks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top, rgba(128, 128, 128, 0.664), rgba(255, 255, 255, 0.137)), url("../img/home/productos/snacks.jpg");
+  background-size: cover;
+  color: aliceblue;
+}
+.se2 .prod .prod__Snacks h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/*  
+.se3 {
+    width: 100vw;
+    grid-area: sect3;
+    display: flex;
+    flex-direction: row;
+    height: 60rem;
+    background: #171718;
+    .promo {
+        display: flex;
+        flex-direction: row;
+        border: 1px white solid;
+        .promo__titulo {
+            display: flex;
+            background-color: aliceblue;
+            height: 20rem;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 10rem;
+        h2 {
+        text-align: center;
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 2rem;
+        font-variant: normal;
+        }
+    }
+    .grid__promo {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        border: 1px red solid;
+        .grid__promo--elem {
+            background-color: aliceblue;
+            display: flex;
+            height: 20rem;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+        }
+    }
+    }
+}
+
+/* RESPONSIVE */
+@media (min-width: 325px) and (max-width: 576px) {
+  .grid-home {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "navb" "carr" "sect" "sect2" "sect3" "foot";
+    grid-template-columns: 100vw;
+  }
+}
+.menu {
+  grid-area: navb;
+}
+.menu .navbar-expand-lg {
+  background-color: rgba(222, 231, 241, 0.5215686275);
+}
+.menu .navbar-expand-lg .navbar-collapse {
+  justify-content: end;
+}
+.menu .navbar-brand img {
+  border-radius: 50%;
+  width: 5rem;
+  height: auto;
+}
+.menu .titulo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 3rem;
+  font-weight: bolder;
+  width: 30rem;
+}
+
+footer {
+  grid-area: foot;
+  display: flex;
+  width: 100vw;
+  background-color: rgba(222, 231, 241, 0.5215686275);
+  align-items: center;
+  text-align: center;
+  height: 28rem;
+}
+footer p {
+  display: flex;
+  color: rgba(56, 57, 58, 0.662745098);
+}
+
+.grid-quienes {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "navb navb navb" "ubi  ubi   ubi" "marc marc marc" "comu comu comu" "redes redes redes" "foot foot foot";
+}
+
+.ubicados {
+  grid-area: ubi;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 20rem;
+}
+.ubicados h2 {
+  text-align: center;
+}
+
+.marcas {
+  grid-area: marc;
+}
+.marcas .conte {
+  display: flex;
+  flex-direction: column;
+}
+.marcas .conte .conte__titulo {
+  text-align: center;
+}
+.marcas .conte .conte__item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.comunidad {
+  grid-area: comu;
+  display: flex;
+  flex-direction: column;
+  height: 10rem;
+  justify-content: space-evenly;
+}
+.comunidad h2 {
+  text-align: center;
+}
+
+.redes {
+  grid-area: redes;
+  display: flex;
+  flex-direction: column;
+}
+.redes .redes__titulo {
+  text-align: justify;
+}
+.redes .redes__item ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.redes .redes__item ul li {
+  list-style: none;
+  display: flex;
+}
+
+.grid-productos {
+  display: grid;
+  height: 100vh;
+  grid-template-areas: "navb navb navb" "tit  tit  tit" "prom prom prom" "prod prod asi" "redes redes asi" "foot foot foot";
+}
+
+.titulo {
+  grid-area: tit;
+  text-align: center;
+}
+
+.grid-promo {
+  grid-area: prom;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  border: 1px red solid;
+  height: 30rem;
+  background-color: black;
+  gap: 1rem;
+}
+.grid-promo div {
+  display: flex;
+  border-radius: 15%;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+.grid-promo div h3 {
+  text-align: center;
+}
+
+.prod {
+  grid-area: prod;
+  display: flex;
+  flex-direction: row;
+  height: 10rem;
+  background-color: blueviolet;
+}
+
+aside {
+  grid-area: asi;
+  display: flex;
+  flex-direction: column;
+  height: 20rem;
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,251 @@
+.grid-home {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        "navb navb navb"
+        "carr carr carr"
+        "sect sect sect"
+        "sect2 sect2 sect2"
+        "foot foot foot";
+        grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contenedor{
+    grid-area: carr;
+    height: 40rem;
+    width: 100vw;
+    img { 
+        height:40rem;
+        width: 100vw;
+    }
+}
+
+.se1 {
+    grid-area: sect;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    .titular {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+    }
+    .cuadro1 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        height: 50rem;
+        padding: 1rem;
+        width: 100vw;
+        .cuadro1__p {
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            width: 50rem;
+            font-size: 3rem;
+        }
+        .cuadro1__img {
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            width: 30rem;
+            font-size: 2rem;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 2rem;
+        }
+    }
+}
+    .cuadro1--rev {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        height: 50rem;
+        padding: 1rem;
+        .cuadro1__p {
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            width: 50rem;
+            font-size: 3rem;
+        }
+        .cuadro1__img {
+            margin: 1rem;
+            display: flex;
+            align-items: center;
+            width: 30rem;
+            font-size: 2rem;
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 2rem;
+        }
+}
+    }
+    .nuestros {
+        background: linear-gradient(to left, black, transparent), url("../img/home/pexels-lucas-guizo-5337821.jpg");
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 50rem;
+        color: rgba(240, 248, 255, 0.815);
+        p {
+            text-align: center;
+            margin: 3rem;
+        }
+    }
+}
+
+
+
+.se2 {
+    grid-area: sect2;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 30rem;
+    background-color: aquamarine;
+    .titulo__se2 {
+        display: flex;
+        align-items: center;
+        justify-content:flex-start;
+        height: 10rem;
+        padding: 2rem;
+        width: 100vw;
+    }
+    .prod {
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        height: 50rem;
+        width: 100vw;
+        .prod__lacteos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/lacteos.jpg");
+            background-size: cover;
+            color: aliceblue;
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+        .prod__bebidas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/bebidas.jpg");
+            background-size: cover;
+            color: aliceblue;
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+        .prod__golosinas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/golosinas.jpg");
+            background-size: cover;
+            color: aliceblue;
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+        .prod__quesos{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url(../img/home/productos/queso.jpg);
+            background-size: cover;
+            color: aliceblue;
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+        .prod__Snacks {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/snacks.jpg");
+            background-size: cover;
+            color: aliceblue;
+            h3 {
+                text-align: center;
+                font-size: 2rem;
+            }
+        }
+    }
+}
+
+
+/*  
+.se3 {
+    width: 100vw;
+    grid-area: sect3;
+    display: flex;
+    flex-direction: row;
+    height: 60rem;
+    background: #171718;
+    .promo {
+        display: flex;
+        flex-direction: row;
+        border: 1px white solid;
+        .promo__titulo {
+            display: flex;
+            background-color: aliceblue;
+            height: 20rem;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 10rem;
+        h2 {
+        text-align: center;
+        font-style: oblique;
+        font-weight: bolder;
+        font-size: 2rem;
+        font-variant: normal;
+        }
+    }
+    .grid__promo {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        border: 1px red solid;
+        .grid__promo--elem {
+            background-color: aliceblue;
+            display: flex;
+            height: 20rem;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            margin: 1rem;
+        }
+    }
+    }
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 325px) and (max-width: 576px) {
+    .grid-home{
+        display: grid;
+        height: 100vh;
+        grid-template-areas: 
+            "navb"
+            "carr"
+            "sect"
+            "sect2"
+            "sect3"
+            "foot";
+            grid-template-columns: 100vw;
+    }
+}

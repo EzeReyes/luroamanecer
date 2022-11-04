@@ -1,0 +1,55 @@
+.grid-productos {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        "navb navb navb"
+        "tit  tit  tit"
+        "prom prom prom"
+        "prod prod asi"
+        "redes redes asi"
+        "foot foot foot";
+}
+
+.titulo {
+    grid-area: tit;
+    text-align: center;
+}
+
+.grid-promo {
+    grid-area: prom;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    border: 1px red solid;
+    height: 30rem;
+    background-color: black;
+    gap: 1rem;
+    div {
+        display: flex;
+        border-radius: 15%;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        margin: 1rem;
+        h3 { 
+            text-align: center;
+        }
+    }  
+}
+
+.prod {
+    grid-area: prod;
+    display: flex;
+    flex-direction: row;
+    height: 10rem;
+    background-color: blueviolet;
+}
+
+aside {
+    grid-area: asi;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    background-color: black;
+    color: white;
+}

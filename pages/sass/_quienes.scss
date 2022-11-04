@@ -1,0 +1,71 @@
+.grid-quienes {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+        "navb navb navb"
+        "ubi  ubi   ubi"
+        "marc marc marc"
+        "comu comu comu"
+        "redes redes redes"
+        "foot foot foot";
+}
+
+
+.ubicados {
+    grid-area: ubi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+    height: 20rem;
+    h2 {
+        text-align: center;
+    }
+}
+
+.marcas {
+    grid-area: marc;
+    .conte {
+        display: flex;
+        flex-direction: column;
+        .conte__titulo {
+            text-align: center;
+        }
+        .conte__item {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+        }
+    }
+}
+
+.comunidad {
+    grid-area: comu;
+    display: flex;
+    flex-direction: column;
+    height: 10rem;
+    justify-content: space-evenly;
+    h2 {
+        text-align: center;
+    }
+}
+
+.redes {
+    grid-area: redes;
+    display: flex;
+    flex-direction: column;
+    .redes__titulo {
+        text-align: justify;
+    }
+    .redes__item {
+        ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        li {
+            list-style: none;
+            display: flex
+        }
+    }
+    }
+}
