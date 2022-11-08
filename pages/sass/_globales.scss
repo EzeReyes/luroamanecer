@@ -26,17 +26,19 @@ $colorMenu: #dee7f185;
 }
 
 
-
 footer {
+.final {
     grid-area: foot;
-    display: flex;
-    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     background-color: $colorMenu;
     align-items: center;
     text-align: center;
-    height: 28rem;
+    height: 30rem;
+    width: 100vw;
     p {
         display: flex;
         color:#38393aa9;
     }
+}
 }
