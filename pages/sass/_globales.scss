@@ -42,3 +42,16 @@ footer {
     }
 }
 }
+
+
+
+@media (min-width: 325px) and (max-width: 576px) {
+
+    
+.menu {
+    grid-area: navb;
+.titulo {
+    justify-content: center;
+}
+}
+}

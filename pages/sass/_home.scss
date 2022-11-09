@@ -1,3 +1,7 @@
+$colorLigth: #ffffff;
+$colorNight: #000000;
+
+
 .grid-home {
     display: grid;
     height: 100vh;
@@ -108,7 +112,6 @@
     flex-direction: column;
     width: 100vw;
     height: 100%;
-    background-color: aquamarine;
     .titulo__se2 {
         display: flex;
         align-items: center;
@@ -116,18 +119,26 @@
         height: 10rem;
         padding: 2rem;
         width: 100vw;
+        background-color:$colorNight;
+        color: $colorLigth;
+        font-stretch: extra-expanded;
+        font-variant: all-petite-caps;
+        letter-spacing: 1rem;
     }
     .pro {
         display: grid;
         grid-template-columns: repeat(5,1fr);
         height: 30rem;
+        a {
+            text-decoration: none;
+            color: $colorLigth;
+        }
         .prod__lacteos {
             display: flex;
             justify-content: center;
             align-items: center;
             background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/lacteos.jpg");
             background-size: cover;
-            color: aliceblue;
             h3 {
                 text-align: center;
                 font-size: 2rem;
@@ -139,7 +150,6 @@
             align-items: center;
             background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/bebidas.jpg");
             background-size: cover;
-            color: aliceblue;
             h3 {
                 text-align: center;
                 font-size: 2rem;
@@ -151,7 +161,6 @@
             align-items: center;
             background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/golosinas.jpg");
             background-size: cover;
-            color: aliceblue;
             h3 {
                 text-align: center;
                 font-size: 2rem;
@@ -163,7 +172,6 @@
             align-items: center;
             background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url(../img/home/productos/queso.jpg);
             background-size: cover;
-            color: aliceblue;
             h3 {
                 text-align: center;
                 font-size: 2rem;
@@ -175,7 +183,6 @@
             align-items: center;
             background: linear-gradient(to top, rgba(128, 128, 128, 0.664),rgba(255, 255, 255, 0.137)), url("../img/home/productos/snacks.jpg");
             background-size: cover;
-            color: aliceblue;
             h3 {
                 text-align: center;
                 font-size: 2rem;
@@ -201,20 +208,57 @@
             grid-template-columns: 100vw;
     }
 
+
+    .se1 {
+        .titular {
+            text-align: center;
+        }
+        .cuadro1 {
+            display: flex;
+            flex-direction: column;
+            height: 80rem;
+            padding: 1rem;
+            width: 100vw;
+            justify-content: space-around;
+            .cuadro1__p {
+                font-size: 3rem;
+                text-align: center;
+                margin: 0;
+                width: auto;
+            }
+            .cuadro1__img {
+                width: auto;
+            }
+        }
+        .cuadro1--rev {
+            display: flex;
+            flex-direction: column-reverse;
+            height: auto;
+            padding: 1rem;
+            width: 100vw;
+            .cuadro1__p {
+                font-size: 3rem;
+                text-align: center;
+                margin: 0;
+                width: auto;
+                justify-content: center;
+            }
+            .cuadro1__img {
+                width: auto;
+            }
+        }
+        }
+
+
 .se2 {
     grid-area: sect2;
     display: flex;
     flex-direction: column;
     width: 100vw;
     height: 100%;
-    background-color: aquamarine;
     .titulo__se2 {
-        display: flex;
-        align-items: center;
-        justify-content:flex-start;
-        height: 10rem;
-        padding: 2rem;
-        width: 100vw;
+        letter-spacing: 2px;
+        justify-content: center;
     }
     .pro {
         display: grid;
