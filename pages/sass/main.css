@@ -496,4 +496,57 @@ aside {
   height: 20rem;
   background-color: black;
   color: white;
+}
+
+@media (min-width: 325px) and (max-width: 576px) {
+  .grid-productos {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "navb" "tit" "prom" "prod" "asi" "foot";
+    grid-template-columns: 100vw;
+  }
+  .titulo {
+    grid-area: tit;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .titulo h2 {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    text-align: center;
+  }
+  aside {
+    height: 100rem;
+    padding-bottom: 2rem;
+  }
+  aside .descuento {
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+    border-radius: 2rem;
+    align-items: center;
+    background-color: #4c4c4c;
+    margin: 1rem;
+  }
+  aside .descuento h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.164);
+    color: white;
+    width: 100%;
+  }
+  aside .descuento img {
+    border-radius: 20%;
+    height: 10rem;
+  }
+  aside .descuento p {
+    font-size: 1rem;
+    text-align: justify;
+    padding: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */
