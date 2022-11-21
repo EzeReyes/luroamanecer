@@ -359,6 +359,90 @@ footer .final p {
   display: flex;
 }
 
+/* responsive cel */
+@media (min-width: 325px) and (max-width: 576px) {
+  body {
+    background: linear-gradient(to left, rgba(53, 192, 241, 0.5803921569), rgba(14, 84, 155, 0.8196078431));
+  }
+  .grid-quienes {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "navb" "ubi" "marc" "comu" "foot";
+    grid-template-columns: 100vw;
+  }
+  .ubicados {
+    grid-area: ubi;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 25rem;
+    margin: 0.5rem;
+  }
+  .ubicados h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .ubicados p {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .marcas {
+    grid-area: marc;
+  }
+  .marcas .conte {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 15rem;
+  }
+  .marcas .conte .conte__titulo {
+    text-align: center;
+    text-decoration: underline;
+  }
+  .marcas .conte .conte__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .comunidad {
+    grid-area: comu;
+    display: flex;
+    flex-direction: column;
+    height: 50rem;
+    justify-content: space-evenly;
+  }
+  .comunidad h2 {
+    text-align: center;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .comunidad h3 {
+    text-align: justify;
+    font-size: 1rem;
+  }
+  .comunidad .redes__titulo {
+    text-align: justify;
+  }
+  .comunidad .redes__item {
+    height: 40rem;
+  }
+  .comunidad .redes__item ul {
+    display: flex;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    flex-direction: row;
+    justify-content: end;
+    margin: 1rem;
+  }
+  .comunidad .redes__item li {
+    list-style: none;
+    display: flex;
+  }
+}
 .grid-productos {
   display: grid;
   height: 100vh;
