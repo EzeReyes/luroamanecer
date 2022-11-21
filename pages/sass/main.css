@@ -560,4 +560,49 @@ aside {
     text-align: justify;
     padding: 1rem;
   }
+}
+@media (min-width: 325px) and (max-width: 576px) {
+  body {
+    background: linear-gradient(to left, rgba(53, 192, 241, 0.5803921569), rgba(14, 84, 155, 0.8196078431));
+  }
+  body .grid-contacto {
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "navb" "cont" "comu" "foot";
+    grid-template-columns: 100vw;
+  }
+  body .contacto {
+    grid-area: cont;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.431372549);
+  }
+  body .contacto .contactoTitulo {
+    display: flex;
+    align-items: center;
+    height: 10rem;
+    text-align: center;
+    padding: 2rem;
+    text-decoration: underline;
+  }
+  body .contacto .contactoTitulo h2 {
+    font-weight: bolder;
+    font-size: 3rem;
+  }
+  body .contacto .contactoSub {
+    display: flex;
+    height: 20rem;
+    width: 100vw;
+    background: url(../img/contacto/tablita.jpg);
+    background-size: cover;
+    padding: 1rem;
+    border: #000000 1rem solid;
+    color: #ffffff;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=main.css.map */
