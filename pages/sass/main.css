@@ -466,7 +466,6 @@ footer .final p {
   grid-template-rows: repeat(2, 1fr);
   border: 1px red solid;
   height: 30rem;
-  background-color: black;
   gap: 1rem;
 }
 .grid-promo div {
@@ -486,7 +485,6 @@ footer .final p {
   display: flex;
   flex-direction: row;
   height: 10rem;
-  background-color: blueviolet;
 }
 
 aside {
@@ -494,18 +492,20 @@ aside {
   display: flex;
   flex-direction: column;
   height: 20rem;
-  background-color: black;
   color: white;
 }
 
 @media (min-width: 325px) and (max-width: 576px) {
-  .grid-productos {
+  body {
+    background: linear-gradient(to left, rgba(53, 192, 241, 0.5803921569), rgba(14, 84, 155, 0.8196078431));
+  }
+  body .grid-productos {
     display: grid;
     height: 100vh;
     grid-template-areas: "navb" "tit" "prom" "prod" "asi" "foot";
     grid-template-columns: 100vw;
   }
-  .titulo {
+  body .titulo {
     grid-area: tit;
     text-align: center;
     display: flex;
@@ -513,17 +513,28 @@ aside {
     align-items: center;
     justify-content: center;
   }
-  .titulo h2 {
+  body .titulo h2 {
     display: flex;
     align-items: center;
     height: 10rem;
     text-align: center;
   }
-  aside {
+  body aside {
     height: 100rem;
     padding-bottom: 2rem;
   }
-  aside .descuento {
+  body aside .tituloMedios {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10rem;
+    background-color: #4c4c4c;
+    font-size: 2rem;
+    color: #ffffff;
+    font-stretch: extra-expanded;
+    font-variant: all-petite-caps;
+  }
+  body aside .descuento {
     display: flex;
     flex-direction: column;
     height: 30rem;
@@ -532,7 +543,7 @@ aside {
     background-color: #4c4c4c;
     margin: 1rem;
   }
-  aside .descuento h3 {
+  body aside .descuento h3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -540,11 +551,11 @@ aside {
     color: white;
     width: 100%;
   }
-  aside .descuento img {
+  body aside .descuento img {
     border-radius: 20%;
     height: 10rem;
   }
-  aside .descuento p {
+  body aside .descuento p {
     font-size: 1rem;
     text-align: justify;
     padding: 1rem;

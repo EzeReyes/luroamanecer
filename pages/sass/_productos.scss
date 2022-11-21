@@ -1,3 +1,5 @@
+$bg--color:linear-gradient(to left, rgba(53, 192, 241, 0.5803921569), rgba(14, 84, 155, 0.8196078431));
+
 .grid-productos {
     display: grid;
     height: 100vh;
@@ -22,7 +24,6 @@
     grid-template-rows: repeat(2, 1fr);
     border: 1px red solid;
     height: 30rem;
-    background-color: black;
     gap: 1rem;
     div {
         display: flex;
@@ -42,7 +43,6 @@
     display: flex;
     flex-direction: row;
     height: 10rem;
-    background-color: blueviolet;
 }
 
 aside {
@@ -50,11 +50,13 @@ aside {
     display: flex;
     flex-direction: column;
     height: 20rem;
-    background-color: black;
     color: white;
 }
 
 @media (min-width: 325px) and (max-width: 576px) {
+    body {
+        background: $bg--color;
+    
 
     .grid-productos {
         display: grid;
@@ -87,6 +89,17 @@ aside {
 aside {
     height: 100rem;
     padding-bottom: 2rem;
+    .tituloMedios {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem ;
+        background-color: #4c4c4c;
+        font-size: 2rem;
+        color: #ffffff;
+        font-stretch: extra-expanded;
+        font-variant: all-petite-caps;
+    }
     .descuento {
         display: flex;
         flex-direction: column;
@@ -114,8 +127,5 @@ aside {
         }
     }
 }
-
-
-
-
+    }
 }
