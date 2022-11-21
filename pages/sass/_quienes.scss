@@ -131,12 +131,17 @@ $bg--color:linear-gradient(to left, rgba(53, 192, 241, 0.5803921569), rgba(14, 8
             flex-direction: column;
             height: 50rem;
             justify-content: space-evenly;
+            background: radial-gradient(rgba(0, 0, 0, 0.459), rgba(255, 255, 255, 0.034)) ,url(../img/quienes/redes.jpg);
+            background-size: cover;
+            color: white;
+            padding: 1rem;
             h2 {
                 text-align: center;
                 font-size: 2rem;
                 display: flex;
                 align-items: center;
                 justify-content: center;
+                height: 10rem;
             }
             h3 {
                 text-align: justify;
